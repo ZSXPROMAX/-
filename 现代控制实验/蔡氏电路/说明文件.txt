@@ -1,0 +1,2 @@
+chuas_s.slx:蔡氏电路系统仿真
+chuas_control.slx:同步
