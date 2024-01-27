@@ -1,0 +1,38 @@
+#include "test.h"
+
+
+
+int x,y;
+
+void test(void){
+while(1){
+if(xdata>240&&xdata<300&&ydata>68&&ydata<136){
+    
+Paint_Bmp(240, 68, 60, 68, false);
+break;
+}
+
+else if(xdata>120&&xdata<180&&ydata>136&&ydata<204){
+    
+Paint_Bmp(120, 136, 60, 68, false);
+break;
+}
+else if(xdata>300&&xdata<360&&ydata>204&&ydata<272){
+    
+Paint_Bmp(300, 204, 60, 68, false);
+break;
+}
+
+else{
+for(y=0;y<=3;y--){
+for(x=0;x<=7;x--){
+if(xdata>=60*x&&xdata<=60*(x+1)&&ydata>=68*y&&ydata<=68*(y+1)){
+Paint_Bmp(60*x,68*y , 60, 68, right);
+//把旁边的也变了
+}
+}
+}
+}
+
+}
+}
